@@ -59,7 +59,6 @@
   width: 100%;
   position: relative;
   display: flex;
-
 }
 
 .tab {
@@ -72,7 +71,7 @@
 
 .tab.active {
   /*border-bottom: 4px solid #FF133B;*/
-  color: rgba(65, 65, 65, 0.87);
+  color:#FF133B;
   font-weight: 600;
 }
 
@@ -94,6 +93,7 @@
   align-items: center;
   padding-bottom: 12px;
   border-radius: 12px;
+  overflow-y: auto;
 }
 
 .contentText {
@@ -114,7 +114,7 @@
   border: 2px solid rgba(168, 167, 167, 0.74);
   background-color: rgb(255, 255, 255);
   box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -125,16 +125,24 @@
   background-size: 400% 100%;
   background-position: 50% 50%;
 }
-.detallesAdicionales {
+.cardHeader{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.cardColapsada{
   width: 400px;
-  height: 115px;
-  border-radius: 12px;
+  height: 200px;
+  border-radius: 0px 0px 12px 12px;
   border: 2px solid rgba(168, 167, 167, 0.74);
   background-color: rgb(255, 255, 255);
   box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
-  margin-bottom: 20px;
-  padding: 10px;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  border-top: none;
 }
 
 @keyframes blink {
@@ -161,7 +169,10 @@
 }
 
 .card-selected {
-  border: 3px solid #FF133B;
+  margin-bottom: 0px;
+  border-radius: 12px 12px 0px 0px;
+  border: 2px solid rgba(168, 167, 167, 0.74);
+  z-index: 99999px;
 }
 
 .card:hover {
@@ -315,3 +326,12 @@ Colores neutros:
 #FFFFFF (blanco)
 
 */
+
+.Navbar{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

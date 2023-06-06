@@ -1,43 +1,45 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState } from 'react';
 
 const Cards = (props) => {
-  const { icono, contenido, imagen } = props;
+  const { icono, contenido } = props;
   const [cardSelected, setCardSelected] = useState(false);
-  const [showDetails, setShowDetails] = useState(false);
-
-  function toggleDetails() {
-    setShowDetails(!showDetails);
-  }
-
-
+  const [isColapsadaVisible, setIsColapsadaVisible] = useState(false);
 
   function cardSelection() {
-    setCardSelected(true);
+    setCardSelected(!cardSelected);
+  }
+
+  function toggleColapsada() {
+    setIsColapsadaVisible((prevVisible) => !prevVisible);
   }
 
   const cardClass = cardSelected ? 'card card-selected' : 'card';
 
   return (
-    <div className={cardClass} onClick={cardSelection}>
-      <div className='badget'>{icono}</div>
-      <div className='planesCardInfo'>
-        <h3>{contenido}</h3>
-        <p style={{ color: 'red' }} onClick={toggleDetails}>
-          Mas detalles.
-        </p>
-        {showDetails && (
-          <div className="detallesAdicionales">
-            <p>Incendio inmueble $ 3.570.000</p>
-            <p>Incendio de bienes $ 267.750</p>
-            <p>Robo o hurto $ 200.000</p>
+    <>
+      <div className={cardClass} onClick={cardSelection}>
+        <div className="cardHeader">
+          <div className='badget'>{icono}</div>
+          <div className='planesCardInfo'>
+            <h3>{contenido}</h3>
+            <p style={{ color: 'red' }} onClick={toggleColapsada}>
+              Mas detalles.
+            </p>
           </div>
-        )}
+          <div className='Imgcontainer'>
+            <div className="bottonPrecio">$760/mes</div>
+          </div>
+        </div>
       </div>
-      <div className='Imgcontainer'>
-        <div className="bottonPrecio">$760/mes</div>
-      </div>
-    </div>
+      {isColapsadaVisible && (
+        <div className="cardColapsada">
+          <p>1-lorem lorem</p>
+          <p>2-lorem lorem</p>
+          <p>3-lorem lorem</p>
+          <p>4-lorem lorem</p>
+        </div>
+      )}
+    </>
   );
 }
 

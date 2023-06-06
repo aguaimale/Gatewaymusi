@@ -6,6 +6,7 @@ import FormPago from './FormPago';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import ProgressBar from '../components/ProgressBar'
+import Navbar from '..//components/Navbar';
 
 
 const View = () => {
@@ -31,7 +32,11 @@ const View = () => {
 
   return (
     <div>
+      <Navbar/>
       <div className="tabs">
+      <div className='progressBar'>
+          <ProgressBar activeTab={activeTab} />
+        </div>
         <div className="tabs_uno">
           <div
             className={`tab ${activeTab === 1 ? 'active' : ''}`}
@@ -60,9 +65,7 @@ const View = () => {
             Pagá
           </div>
         </div>
-        <div className='progressBar'>
-          <ProgressBar activeTab={activeTab} />
-        </div>
+       
 
       </div>
 
