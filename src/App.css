@@ -1,0 +1,317 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+ 
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.labelcheck {
+  box-shadow: none;
+  width: max-content;
+}
+
+.chec {
+  height: 20px;
+  box-shadow: none;
+  width: 25px;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  color: silver;
+  margin-top: 12px;
+}
+
+.tabs_uno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  color: silver;
+  margin-top: 12px;
+}
+
+.progressBar {
+  width: 100%;
+  position: relative;
+  display: flex;
+
+}
+
+.tab {
+  /*border-bottom: 1px solid rgb(170, 170, 170);*/
+  margin: 8px;
+  width: 100%;
+
+
+}
+
+.tab.active {
+  /*border-bottom: 4px solid #FF133B;*/
+  color: rgba(65, 65, 65, 0.87);
+  font-weight: 600;
+}
+
+.tab-content {
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12px;
+  border-radius: 12px;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.cardConteiner {
+  padding: 3px;
+}
+
+.card {
+  width: 400px;
+  height: 115px;
+  border-radius: 12px;
+  border: 2px solid rgba(168, 167, 167, 0.74);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  animation: blink 2s ;
+  background-image: radial-gradient(circle at center, #ffffff 0%, #ffffff 50%, #e6e6e6 100%);
+  background-size: 400% 100%;
+  background-position: 50% 50%;
+}
+.detallesAdicionales {
+  width: 400px;
+  height: 115px;
+  border-radius: 12px;
+  border: 2px solid rgba(168, 167, 167, 0.74);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@keyframes blink {
+  0% {
+    background-position: 200% 50%;
+  }
+  50% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
+.card:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.card-selected {
+  border: 3px solid #FF133B;
+}
+
+.card:hover {
+  border: 3px solid #FF133B;
+}
+
+.badget {
+  background-color: #FF133B;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-left: 20px;
+  box-shadow: 3px 10px 10px -4px rgba(0, 0, 0, 0.21);
+}
+
+.badget_dos {
+  background-color: #FF133B;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 3px 10px 10px -4px rgba(0, 0, 0, 0.21);
+}
+
+.planesCardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.planesCardInfo h3 {
+  font-size: medium;
+}
+
+.Imgcontainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.bottonPrecio{
+  background-color: #FF133B;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px;
+  width: 80px;
+  border-radius: 20px;
+  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
+}
+
+h2,
+h3,
+p {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+.cardDescr {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  background-color: #ffff;
+  border: 2px solid rgba(168, 167, 167, 0.74);
+  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 12px;
+  margin: 20px;
+}
+
+.cardDescrbuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.badgetCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.planCardConteiner {
+  margin-top: 30px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  height: 760px;
+}
+
+.planCardConteiner::-webkit-scrollbar {
+  width: 4px;
+}
+
+.planCardConteiner::-webkit-scrollbar-thumb {
+  background-color: #6650a400;
+}
+#outlined-basic{
+  background-color: #ffff;
+  border-radius: 7px;
+  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.30);
+}
+
+
+/*
+
+
+Color principal: #FF133B (rojo oscuro)
+
+Colores complementarios:
+#FF5010 (naranja)
+#FFD700 (amarillo dorado)
+#1B54A7 (azul)
+#13FF8A (verde claro)
+
+Colores tonales:
+#FF4E5D (rojo claro)
+#FF8E62 (naranja claro)
+#FFE884 (amarillo claro)
+#64A8D1 (azul claro)
+#79FFBD (verde claro)
+
+Colores neutros:
+#333333 (gris oscuro)
+#808080 (gris medio)
+#E8E8E8 (gris claro)
+#FFFFFF (blanco)
+
+*/
