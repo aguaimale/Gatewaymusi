@@ -42,7 +42,7 @@
   justify-content: center;
   width: 500px;
   color: silver;
-  margin-top: 12px;
+  
 }
 
 .tabs_uno {
@@ -52,7 +52,8 @@
   justify-content: center;
   width: 500px;
   color: silver;
-  margin-top: 12px;
+  margin-bottom: 12px;
+  
 }
 
 .progressBar {
@@ -136,7 +137,7 @@ margin-top: 30px;
 }
 .cardColapsada{
   width: 400px;
-  height: 160px;
+  height: 150px;
   border-radius: 0px 0px 12px 12px;
   border: 2px solid rgba(168, 167, 167, 0.74);
   background-color: rgb(255, 255, 255);

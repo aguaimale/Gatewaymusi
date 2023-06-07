@@ -27,6 +27,7 @@ const FormPago = () => {
 
     return (
         <div className='forms'>
+            <p>Ingresá tus datos</p>
             <form onSubmit={handleSubmit}>
                 <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} noValidate autoComplete="off">
                     <TextField id="outlined-basic" label="Numero de tarjeta" variant="outlined" onChange={(e) => setNumeroTarjeta(e.target.value)} />

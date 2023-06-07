@@ -38,10 +38,11 @@ export const Planes = () => {
     return (
         <div className='contenedor'>
             <div className='contentText'>
-                <h2>Tu seguro</h2>
+                <h2></h2>
+                <h3>Tu seguro</h3>
                 <h3>100% online</h3>
-                <p>Contratá sin compromiso, compara los diferentes planes y</p>
-                <p>contratá tu seguro.</p>
+                <p>Contratá sin compromiso, compara los diferentes</p>
+                <p>planes y contratá tu seguro.</p>
             </div>
             <div className='planCardConteiner'>
                 {infoPlanes.map((infoPlan, index) => (

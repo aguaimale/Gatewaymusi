@@ -26,6 +26,7 @@ const FormInfoUser = (props) => {
   return (
 
     <div className='forms'>
+      <p>Ingresá tus datos</p>
       <form type="submit" >
         <Box sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} onSubmit={handleSubmit} noValidate autoComplete="off">
           <TextField
