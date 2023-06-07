@@ -7,9 +7,11 @@ const Cards = (props) => {
 
   function cardSelection() {
     setCardSelected(!cardSelected);
+    
   }
 
   function toggleColapsada() {
+    setCardSelected(!cardSelected);
     setIsColapsadaVisible((prevVisible) => !prevVisible);
   }
 
@@ -23,7 +25,7 @@ const Cards = (props) => {
           <div className='planesCardInfo'>
             <h3>{contenido}</h3>
             <p style={{ color: 'red' }} onClick={toggleColapsada}>
-              Mas detalles.
+               {isColapsadaVisible ? 'Menos detalles <' : 'Más detalles >'}
             </p>
           </div>
           <div className='Imgcontainer'>

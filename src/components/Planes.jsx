@@ -22,7 +22,7 @@ export const Planes = () => {
             id: '3AP',
             icon: 'AP',
             title: 'Accidentes personales',
-            description: 'Te acompañamos en cada uno de esos imprevistos a los que te puedas enfrentar.'
+            description: 'Te acompañamos con esos imprevistos a los que te puedas enfrentar.'
         },
         {
             id: '4EP',
