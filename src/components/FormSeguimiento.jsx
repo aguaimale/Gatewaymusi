@@ -33,7 +33,7 @@ const FormSeguimiento = () => {
             </div>
            
             <div className='cardDescrbuttons'>
-                <button className='buttonAtras' type='button' onClick={handleButtonback} >Atras</button>
+                <button className='buttonAtras' type='button' onClick={handleButtonback}  >Atras</button>
                 <button className='button' type='button' onClick={handleButtonClick} >Siguiente</button>
             </div>
 

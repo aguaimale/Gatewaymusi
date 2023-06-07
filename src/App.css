@@ -71,7 +71,7 @@
 
 .tab.active {
   /*border-bottom: 4px solid #FF133B;*/
-  color:#FF133B;
+  color:#ED1C24;
   font-weight: 600;
 }
 
@@ -95,12 +95,16 @@
   border-radius: 12px;
   overflow-y: auto;
 }
+.contenedorBotones{
+margin-top: 30px;
+}
 
 .contentText {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 30px;
+  margin-left: 0px;
 }
 
 .cardConteiner {
@@ -113,7 +117,7 @@
   border-radius: 12px;
   border: 2px solid rgba(168, 167, 167, 0.74);
   background-color: rgb(255, 255, 255);
-  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
+  /*box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);*/
   margin-bottom: 8px;
   cursor: pointer;
   display: flex;
@@ -132,17 +136,19 @@
 }
 .cardColapsada{
   width: 400px;
-  height: 200px;
+  height: 160px;
   border-radius: 0px 0px 12px 12px;
   border: 2px solid rgba(168, 167, 167, 0.74);
   background-color: rgb(255, 255, 255);
-  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
+  /*box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);*/
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 12px;
+  border: 3px solid #ED1C24;
   border-top: none;
+  text-align:start;
 }
 
 @keyframes blink {
@@ -171,16 +177,14 @@
 .card-selected {
   margin-bottom: 0px;
   border-radius: 12px 12px 0px 0px;
-  border: 2px solid rgba(168, 167, 167, 0.74);
-  z-index: 99999px;
+  border-bottom: 2px solid rgba(168, 167, 167, 0.74);
+  border: 3px solid #ED1C24;
+  border-bottom: none;
 }
 
-.card:hover {
-  border: 3px solid #FF133B;
-}
 
 .badget {
-  background-color: #FF133B;
+  background-color: #ED1C24;
   border-radius: 100px;
   width: 50px;
   height: 50px;
@@ -189,11 +193,11 @@
   justify-content: center;
   color: white;
   margin-left: 20px;
-  box-shadow: 3px 10px 10px -4px rgba(0, 0, 0, 0.21);
+  /*box-shadow: 3px 10px 10px -4px rgba(0, 0, 0, 0.21);*/
 }
 
 .badget_dos {
-  background-color: #FF133B;
+  background-color: #ED1C24;
   border-radius: 100px;
   width: 50px;
   height: 50px;
@@ -201,7 +205,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 3px 10px 10px -4px rgba(0, 0, 0, 0.21);
+ /* box-shadow: 3px 10px 10px -4px rgba(0, 0, 0, 0.21);*/
 }
 
 .planesCardInfo {
@@ -225,13 +229,13 @@
   
 }
 .bottonPrecio{
-  background-color: #FF133B;
+  background-color: #ED1C24;
   color: #ffffff;
   font-weight: 600;
   padding: 10px;
   width: 80px;
   border-radius: 20px;
-  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
+  /*box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);*/
 }
 
 h2,
@@ -256,7 +260,7 @@ h3 {
   border-radius: 12px;
   background-color: #ffff;
   border: 2px solid rgba(168, 167, 167, 0.74);
-  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
+  /*box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -297,36 +301,8 @@ h3 {
 #outlined-basic{
   background-color: #ffff;
   border-radius: 7px;
-  box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.30);
+  /*box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.30);*/
 }
-
-
-/*
-
-
-Color principal: #FF133B (rojo oscuro)
-
-Colores complementarios:
-#FF5010 (naranja)
-#FFD700 (amarillo dorado)
-#1B54A7 (azul)
-#13FF8A (verde claro)
-
-Colores tonales:
-#FF4E5D (rojo claro)
-#FF8E62 (naranja claro)
-#FFE884 (amarillo claro)
-#64A8D1 (azul claro)
-#79FFBD (verde claro)
-
-Colores neutros:
-#333333 (gris oscuro)
-#808080 (gris medio)
-#E8E8E8 (gris claro)
-#FFFFFF (blanco)
-
-*/
-
 .Navbar{
   height: 70px;
   width: 100%;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Cards = (props) => {
-  const { icono, contenido } = props;
+  const { icono, contenido, precio, detalles } = props;
   const [cardSelected, setCardSelected] = useState(false);
   const [isColapsadaVisible, setIsColapsadaVisible] = useState(false);
 
@@ -27,16 +27,18 @@ const Cards = (props) => {
             </p>
           </div>
           <div className='Imgcontainer'>
-            <div className="bottonPrecio">$760/mes</div>
+            <div className="bottonPrecio">${precio}/mes</div>
           </div>
         </div>
       </div>
       {isColapsadaVisible && (
         <div className="cardColapsada">
-          <p>1-lorem lorem</p>
-          <p>2-lorem lorem</p>
-          <p>3-lorem lorem</p>
-          <p>4-lorem lorem</p>
+          <ul>
+            <li>{detalles[0]}</li>
+            <li>{detalles[1]}</li>
+            <li>{detalles[2]}</li>
+          </ul>
+         
         </div>
       )}
     </>

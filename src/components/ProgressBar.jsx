@@ -90,10 +90,6 @@ const steps = [
         label: '',
 
     },
-    {
-        label: '',
-
-    },
 ]
 
 const ProgressBar = ({activeTab}) => {
@@ -107,7 +103,7 @@ const ProgressBar = ({activeTab}) => {
 
     const totalSteps = steps.length
 
-    const width = `${(100 / (totalSteps)) * (activeStep -1)}%`
+    const width = `${(100 / (totalSteps )) * (activeStep -1 )}%`
 
     useEffect(() => {
         nextStep();

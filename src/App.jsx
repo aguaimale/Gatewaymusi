@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css'
 import View from './components/view'
 import Planes from './components/Planes'
@@ -10,7 +10,7 @@ function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: '#FF133B',
+        main: '#ED1C24',
       },
     },
   });

@@ -91,8 +91,8 @@ const FormInfoUser = (props) => {
 
       <div className='contenedorBotones'>
         <Stack spacing={9} direction="row">
-          <Button style={{ borderRadius: 8 }} size="medium" color="primary" variant="outlined">Atras</Button>
-          <Button style={{ borderRadius: 8 }} size="medium" color="primary" variant="contained" type='submit' onClick={(e) => handleSubmit(e)}>Siguiente</Button>
+          <Button style={{ borderRadius: 20 }} size="medium" color="primary" variant="outlined">Atras</Button>
+          <Button style={{ borderRadius: 20}} size="medium" color="primary" variant="contained" type='submit' onClick={(e) => handleSubmit(e)}>Siguiente</Button>
         </Stack>
       </div>
 
