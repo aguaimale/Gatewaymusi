@@ -37,8 +37,8 @@ export const Planes = () => {
 
     return (
         <div className='contenedor'>
-            <div className='contentText'>
-                <h2></h2>
+            <div className='textHeader'>
+               
                 <h3>Tu seguro</h3>
                 <h3>100% online</h3>
                 <p>Contratá sin compromiso, compara los diferentes</p>

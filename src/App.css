@@ -4,7 +4,6 @@
   padding: 10px;
   text-align: center;
   overflow: hidden;
- 
 }
 
 .forms {
@@ -94,18 +93,23 @@
   align-items: center;
   padding-bottom: 12px;
   border-radius: 12px;
-  overflow-y: auto;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 .contenedorBotones{
 margin-top: 30px;
 }
 
-.contentText {
+.textHeader {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 30px;
+  width: 400px;
+  margin-top: 7px;
   margin-left: 0px;
+  margin-bottom: 15px;
+  
 }
 
 .cardConteiner {
@@ -137,19 +141,31 @@ margin-top: 30px;
 }
 .cardColapsada{
   width: 400px;
-  height: 150px;
+  height: 350px;
   border-radius: 0px 0px 12px 12px;
   border: 2px solid rgba(168, 167, 167, 0.74);
   background-color: rgb(255, 255, 255);
   box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.21);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items:flex-start;
   margin-bottom: 12px;
-  border: 3px solid #ED1C24;
   border-top: none;
   text-align:start;
+}
+strong{
+  color: #ED1C24;
+}
+.resaltado{
+  color:rgba(34, 34, 34, 0.87);;
+}
+
+.planText{
+  padding: 15px;
+}
+.ulplanText{
+ padding-right: 4px;
 }
 
 @keyframes blink {
@@ -179,8 +195,6 @@ margin-top: 30px;
   margin-bottom: 0px;
   border-radius: 12px 12px 0px 0px;
   border-bottom: 2px solid rgba(168, 167, 167, 0.74);
-  border: 3px solid #ED1C24;
-  border-bottom: none;
 }
 
 
