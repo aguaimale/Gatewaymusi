@@ -106,7 +106,6 @@
   width: 350px;
   margin-top: 7px;
   margin-left: 0px;
-  margin-bottom: 15px;
 }
 
 .cardConteiner {
@@ -114,7 +113,7 @@
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
-
+  height: 500px;
 }
 
 .card {
@@ -316,7 +315,7 @@ h4 {
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
-  height: 500px;
+  height: 550px;
 }
 
 .planCardConteiner::-webkit-scrollbar {
