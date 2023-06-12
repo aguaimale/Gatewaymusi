@@ -90,7 +90,7 @@ const View = () => {
           </div>
         </div>
 
-        {activeTab === 1 && <div className='contenedor'><div className='cardConteiner'>
+        {activeTab === 1 && <div className='cardConteiner'>
           {infoCards.map((infoCards, index) => (
             <Cards 
             key={index} 
@@ -102,7 +102,6 @@ const View = () => {
              handleTabClick={handleTabClick}
              />
           ))}
-        </div>
         </div>
         }
 
