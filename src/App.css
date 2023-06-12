@@ -349,6 +349,9 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+.navArrowBack{
+ cursor: pointer;
+}
 
 .forms{
 display: flex;

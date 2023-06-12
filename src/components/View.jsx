@@ -46,7 +46,7 @@ const View = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar handleTabClick={handleTabClick} activeTab={activeTab} />
       <div className="tab-content">
         {activeTab === 1 && <div className='textHeader'>
           <h3>Elegí </h3>
