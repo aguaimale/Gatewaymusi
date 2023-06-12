@@ -51,15 +51,15 @@ const View = () => {
         {activeTab === 1 && <div className='textHeader'>
           <h3>Elegí </h3>
           <h3>entre los planes</h3>
-          <p>Seleccioná el plan que más se adapte a tus</p>
-          <p>necesidades y preferencias.</p>
+          <p>Seleccioná el plan que más se adapte a </p>
+          <p>tus necesidades y preferencias.</p>
         </div>}
 
         {activeTab === 2 && <div className='textHeader'>
           <h3>Completá</h3>
           <h3>con tus datos</h3>
-          <p>Tu información servirá para poder realizar la </p>
-          <p>documentación de tu seguro.</p>
+          <p>Tu información servirá para poder  </p>
+          <p>realizar la documentación de tu seguro.</p>
         </div>}
 
         {activeTab === 3 && <div className='textHeader'>

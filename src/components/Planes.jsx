@@ -38,7 +38,6 @@ export const Planes = () => {
     return (
         <div className='contenedor'>
             <div className='textHeader'>
-               
                 <h3>Tu seguro</h3>
                 <h3>100% online</h3>
                 <p>Contratá sin compromiso, compara los diferentes planes y contratá tu seguro.</p>

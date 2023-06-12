@@ -29,15 +29,15 @@ const FormPago = () => {
         <div className='forms'>
             <p>Ingresá tus datos</p>
             <form onSubmit={handleSubmit}>
-                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} noValidate autoComplete="off">
+                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '32ch' }, }} noValidate autoComplete="off">
                     <TextField id="outlined-basic" label="Numero de tarjeta" variant="outlined" onChange={(e) => setNumeroTarjeta(e.target.value)} />
                 </Box>
-                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} noValidate autoComplete="off">
+                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '32ch' }, }} noValidate autoComplete="off">
                     <TextField id="outlined-basic" label="Titular" variant="outlined" onChange={(e) => setNombreTarjeta(e.target.value)} />
                     <FormHelperText>Como figura en la tarjeta</FormHelperText>
 
                 </Box>
-                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} noValidate autoComplete="off">
+                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '32ch' }, }} noValidate autoComplete="off">
                     <TextField id="outlined-basic" label="DNI" variant="outlined" onChange={(e) => setDni(e.target.value)} />
                 </Box>
                 <div className='checkbox'>

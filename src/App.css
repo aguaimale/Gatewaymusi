@@ -20,6 +20,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -49,9 +50,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 440px;
+  width: 400px;
   color: silver;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .progressBar {
@@ -61,7 +62,7 @@
 }
 
 .tab {
-  /*border-bottom: 1px solid rgb(170, 170, 170);*/
+ 
   margin: 8px;
   width: 100%;
 }
@@ -79,7 +80,6 @@
   align-items: center;
 }
 
-
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -96,14 +96,14 @@
 }
 
 .contenedorBotones {
-  margin-top: 30px;
+  margin-top: 6px;
 }
 
 .textHeader {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 350px;
+  width: 322px;
   margin-top: 7px;
   margin-left: 0px;
 }
@@ -223,6 +223,7 @@ strong {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 135px;
 }
 
 .planesCardInfo h3 {
@@ -348,6 +349,14 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+
+.forms{
+display: flex;
+flex-direction: column;
+width: 349px;  
+margin-top: 5px;
+}
+
 
 
 

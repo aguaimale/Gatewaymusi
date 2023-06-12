@@ -28,7 +28,7 @@ const FormInfoUser = (props) => {
     <div className='forms'>
       <p>Ingresá tus datos</p>
       <form type="submit" >
-        <Box sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} onSubmit={handleSubmit} noValidate autoComplete="off">
+        <Box sx={{ '& > :not(style)': { m: 1, width: '32ch' }, }} onSubmit={handleSubmit} noValidate autoComplete="off">
           <TextField
             id="outlined-basic"
             label="Apellido"
@@ -38,7 +38,7 @@ const FormInfoUser = (props) => {
             onChange={handleChange}
           />
         </Box>
-        <Box sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} noValidate autoComplete="off">
+        <Box sx={{ '& > :not(style)': { m: 1, width: '32ch' }, }} noValidate autoComplete="off">
           <TextField
             id="outlined-basic"
             label="Nombre"
@@ -48,7 +48,7 @@ const FormInfoUser = (props) => {
             onChange={handleChange}
           />
         </Box>
-        <Box sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} noValidate autoComplete="off">
+        <Box sx={{ '& > :not(style)': { m: 1, width: '32ch' }, }} noValidate autoComplete="off">
           <TextField
             id="outlined-basic"
             label="Pais"
@@ -58,7 +58,7 @@ const FormInfoUser = (props) => {
             onChange={handleChange}
           />
         </Box>
-        <Box sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} noValidate autoComplete="off">
+        <Box sx={{ '& > :not(style)': { m: 1, width: '32ch' }, }} noValidate autoComplete="off">
           <TextField
             id="outlined-basic"
             label="Provincia"
@@ -68,7 +68,7 @@ const FormInfoUser = (props) => {
             onChange={handleChange}
           />
         </Box>
-        <Box sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} noValidate autoComplete="off">
+        <Box sx={{ '& > :not(style)': { m: 1, width: '32ch' }, }} noValidate autoComplete="off">
           <TextField
             id="outlined-basic"
             label="Localidad"
@@ -78,7 +78,7 @@ const FormInfoUser = (props) => {
             onChange={handleChange}
           />
         </Box>
-        <Box sx={{ '& > :not(style)': { m: 1, width: '40ch' }, }} noValidate autoComplete="off">
+        <Box sx={{ '& > :not(style)': { m: 1, width: '32ch' }, }} noValidate autoComplete="off">
           <TextField
             type='date'
             id="outlined-basic"

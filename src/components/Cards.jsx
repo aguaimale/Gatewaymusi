@@ -25,7 +25,7 @@ const Cards = (props) => {
           <div className='planesCardInfo'>
             <h3>{contenido}</h3>
             <p style={{ color: 'red' }} onClick={toggleColapsada}>
-              {isColapsadaVisible ? 'Menos detalles <' : 'Más detalles >'}
+              {isColapsadaVisible ? 'Menos detalles <' : 'Más detalles   >'}
             </p>
           </div>
           <div className='Imgcontainer'>
