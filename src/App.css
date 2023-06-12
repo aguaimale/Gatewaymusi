@@ -1,5 +1,6 @@
 #root {
-  max-width: 1280px;
+  max-width: 600px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
@@ -39,9 +40,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 450px;
   color: silver;
-  
 }
 
 .tabs_uno {
@@ -49,14 +49,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 440px;
   color: silver;
   margin-bottom: 12px;
-  
 }
 
 .progressBar {
-  width: 85%;
+  width: 80%;
   position: relative;
   display: flex;
 }
@@ -65,13 +64,11 @@
   /*border-bottom: 1px solid rgb(170, 170, 170);*/
   margin: 8px;
   width: 100%;
-
-
 }
 
 .tab.active {
   /*border-bottom: 4px solid #FF133B;*/
-  color:#ED1C24;
+  color: #ED1C24;
   font-weight: 600;
 }
 
@@ -80,44 +77,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+
 
 .contenedor {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  height: 150%;
+  width: 300px;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 12px;
   border-radius: 12px;
-  overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+  
 }
-.contenedorBotones{
-margin-top: 30px;
+
+.contenedorBotones {
+  margin-top: 30px;
 }
 
 .textHeader {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 400px;
+  width: 350px;
   margin-top: 7px;
   margin-left: 0px;
   margin-bottom: 15px;
-  
 }
 
 .cardConteiner {
-  padding: 3px;
+  padding: 12px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+
 }
 
 .card {
-  width: 400px;
+  width:359px;
   height: 115px;
   border-radius: 12px;
   border: 2px solid rgba(168, 167, 167, 0.74);
@@ -129,19 +130,21 @@ margin-top: 30px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  animation: blink 2s ;
+  animation: blink 2s;
   background-image: radial-gradient(circle at center, #ffffff 0%, #ffffff 50%, #e6e6e6 100%);
   background-size: 400% 100%;
   background-position: 50% 50%;
 }
-.cardHeader{
+
+.cardHeader {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
-.cardColapsada{
-  width: 400px;
-  height: 350px;
+
+.cardColapsada {
+  width: 359px;
+  height: 375px;
   border-radius: 0px 0px 12px 12px;
   border: 2px solid rgba(168, 167, 167, 0.74);
   background-color: rgb(255, 255, 255);
@@ -149,23 +152,26 @@ margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items:flex-start;
+  align-items: flex-start;
   margin-bottom: 12px;
   border-top: none;
-  text-align:start;
-}
-strong{
-  color: #ED1C24;
-}
-.resaltado{
-  color:rgba(34, 34, 34, 0.87);;
+  text-align: start;
 }
 
-.planText{
+strong {
+  color: #ED1C24;
+}
+
+.resaltado {
+  color: rgba(34, 34, 34, 0.87);
+}
+
+.planText {
   padding: 15px;
 }
-.ulplanText{
- padding-right: 4px;
+
+.ulplanText {
+  padding-right: 4px;
 }
 
 @keyframes blink {
@@ -179,6 +185,7 @@ strong{
     background-position: 50% 50%;
   }
 }
+
 .card:nth-child(1) {
   animation-delay: 2s;
 }
@@ -197,38 +204,26 @@ strong{
   border-bottom: 2px solid rgba(168, 167, 167, 0.74);
 }
 
-
 .badget {
   background-color: #ED1C24;
   border-radius: 100px;
-  width: 50px;
-  height: 50px;
+  width:45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   margin-left: 20px;
+  margin-right: 15px;
   /*box-shadow: 3px 10px 10px -4px rgba(0, 0, 0, 0.21);*/
 }
 
-.badget_dos {
-  background-color: #ED1C24;
-  border-radius: 100px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
- /* box-shadow: 3px 10px 10px -4px rgba(0, 0, 0, 0.21);*/
-}
 
 .planesCardInfo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
 }
 
 .planesCardInfo h3 {
@@ -241,16 +236,15 @@ strong{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
-.bottonPrecio{
+
+.bottonPrecio {
   background-color: #ED1C24;
   color: #ffffff;
   font-weight: 600;
   padding: 8px;
   width: 85px;
   border-radius: 100px;
- 
 }
 
 h2,
@@ -268,6 +262,7 @@ h2 {
 h3 {
   font-size: 35px;
 }
+
 h4 {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -285,14 +280,16 @@ h4 {
   padding: 12px;
   margin: 20px;
 }
-.cardPlaceHolderImg{
-display:contents;
+
+.cardPlaceHolderImg {
+  display: contents;
 }
-.cardimg{
+
+.cardimg {
   border-radius: 6px;
 }
 
-.cardtext{
+.cardtext {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -323,18 +320,28 @@ display:contents;
 }
 
 .planCardConteiner::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
+  
+}
+.cardConteiner::-webkit-scrollbar {
+  width: 6px;
+ 
 }
 
 .planCardConteiner::-webkit-scrollbar-thumb {
-  background-color: #6650a400;
+  background-color: #ffffff;
 }
-#outlined-basic{
+.cardConteiner::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+#outlined-basic {
   background-color: #ffff;
   border-radius: 7px;
   /*box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.30);*/
 }
-.Navbar{
+
+.Navbar {
   height: 70px;
   width: 100%;
   display: flex;
@@ -342,3 +349,7 @@ display:contents;
   justify-content: space-between;
   align-items: center;
 }
+
+
+
+
