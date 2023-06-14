@@ -46,14 +46,13 @@ const FormPago = () => {
                         type="checkbox"
                         checked={terminos}
                         onChange={(e) => setTerminos(e.target.checked)} />
-
                 </div>
 
             </form>
             <div className='contenedorBotones'>
                 <Stack spacing={9} direction="row">
                     {/* <Button style={{ borderRadius: 20 }}  size="medium" color="primary"variant="outlined">Atras</Button> */}
-                    <Button style={{ borderRadius: 20 }}  size="medium" color="primary" variant="contained">Siguiente</Button>
+                    <Button style={{ borderRadius: 20 }} size="medium" color="primary" variant="contained">Siguiente</Button>
                 </Stack>
             </div>
         </div>

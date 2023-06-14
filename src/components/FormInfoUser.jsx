@@ -19,10 +19,6 @@ const FormInfoUser = (props) => {
     props.handleTabClick(3);
   };
 
-
-
-
-
   return (
 
     <div className='forms'>

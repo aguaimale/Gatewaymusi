@@ -93,9 +93,9 @@ const View = () => {
         {activeTab === 1 && <div className='cardConteiner'>
           {infoCards.map((infoCards, index) => (
             <Cards 
-            key={index} 
-            icono={infoCards.icono} 
-            contenido={infoCards.contenido}
+             key={index} 
+             icono={infoCards.icono} 
+             contenido={infoCards.contenido}
              precio={infoCards.precio} 
              detalles={infoCards.detalles} 
              onSelect={() => handleCardSelection(infoCards.id)} 
