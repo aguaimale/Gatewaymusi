@@ -48,6 +48,7 @@
   background: white;
   box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.02);
   text-align: center;
+  z-index: 10;
 }
 
 .tabs_uno {
@@ -103,7 +104,12 @@
 }
 
 .contenedorBotones {
-  margin-top: 6px;
+  margin-top: 26px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: inherit;
+  margin-bottom: 22px;
 }
 
 .textHeader {
@@ -113,12 +119,6 @@
   width: 322px;
   margin-top: 7px;
   margin-left: 0px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.textHeader.scroll {
-  transform: scale(0);
-  opacity: 0;
 }
 
 .cardConteiner {
@@ -229,7 +229,6 @@ strong {
   /*box-shadow: 3px 10px 10px -4px rgba(0, 0, 0, 0.21);*/
 }
 
-
 .planesCardInfo {
   display: flex;
   flex-direction: column;
@@ -258,6 +257,7 @@ strong {
   padding: 8px;
   width: 85px;
   border-radius: 100px;
+  text-align: center;
 }
 
 h2,
@@ -367,7 +367,7 @@ li {
 }
 
 .Navbar {
-  height: 70px;
+  height: 50px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -384,4 +384,20 @@ li {
   flex-direction: column;
   width: 349px;
   margin-top: 5px;
+
+}
+.ButtonSexoDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.texthelper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 225px !important;
+  
 }

@@ -9,8 +9,12 @@ function App() {
 
   const theme = createTheme({
     palette: {
-      primary: {
+      secondary: {
         main: '#ED1C24',
+      },
+    
+      primary: {
+        main: 'rgba(232, 222, 248, 1)',
       },
     },
   });
